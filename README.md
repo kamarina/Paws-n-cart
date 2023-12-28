@@ -1,24 +1,56 @@
-# Paws-n-cart
-The program simulates a simple pet shopping cart system.
-"""
-It consists of two classes:
-- PetProduct: Represents a pet product with attributes such as name, price, and quantity.
-- ShoppingCart: Represents a shopping cart that allows users to add, remove, and view pet products.
+Pet Shopping Cart Program
+This Python program simulates a simple pet shopping cart system. It consists of two classes:
 
-The ShoppingCart class includes methods for managing the shopping cart:
-- add_to_cart: Adds a specified quantity of a product to the cart or updates the quantity if the product is already present.
-- remove_from_cart: Removes a specified quantity of a product from the cart or removes the product entirely.
-- view_cart: Displays the contents of the shopping cart and calculates the total cost.
-- display_available_products: Displays a list of available pet products for users to choose from.
+PetProduct: Represents a pet product with attributes such as name, price, and quantity.
+ShoppingCart: Represents a shopping cart that allows users to add, remove, and view pet products.
+PetProduct Class
+python
+Copy code
+class PetProduct:
+  def __init__(self, name, price):
+    self.name = name
+    self.price = price
+    self.quantity = 1
 
-The program provides a sample usage section where users can interact with the shopping cart through a menu:
-1. Add item to cart
-2. Remove an item from a cart
-3. View cart
-4. Checkout and exit
+  def __str__(self):
+    return f"{self.name} (Quantity: {self.quantity}) - £{self.price:.2f}"
+ShoppingCart Class
+python
+Copy code
+class ShoppingCart:
+  def __init__(self):
+    self.cart = []    # List to store products in the cart
+    self.prices = []  # List to store prices for each product in the cart
 
-Users can select options, input product quantities, and manage their shopping cart until they choose to checkout and exit the program.
+  def add_to_cart(self, product, quantity):
+    # Check if the product is already in the cart
+    # ... (see original code for implementation)
 
-This program is designed to showcase a basic understanding of classes, methods, user input handling, and simple interaction with a shopping cart system.
-"""
+  def remove_from_cart(self, product_name, quantity_to_remove=None):
+    # Find the product in the cart based on the product name
+    # ... (see original code for implementation)
 
+  def view_cart(self):
+    # Display the contents of the cart
+    # ... (see original code for implementation)
+
+  def display_available_products(self):
+    # Display available products and return a dictionary
+    # ... (see original code for implementation)
+Sample Usage
+python
+Copy code
+# Sample usage of the program
+cart = ShoppingCart()
+
+while True:
+  # Display menu and prompt user for input
+  # ... (see original code for implementation)
+Menu Options:
+Add item to cart: Allows the user to add items to the cart.
+Remove item from cart: Allows the user to remove items from the cart.
+View cart: Displays the contents of the cart.
+Checkout and exit: Completes the shopping process and exits the program.
+Note: Ensure to enter valid choices and quantities when prompted.
+
+Thank you for shopping with Paws n Cart!
