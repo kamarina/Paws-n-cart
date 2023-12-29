@@ -1,8 +1,8 @@
-# Pet Shopping Cart Program:
-#
-# This Python program simulates a simple pet shopping cart system. It consists of two classes:
-# - PetProduct: Represents a pet product with attributes such as name, price, and quantity.
-# - ShoppingCart: Represents a shopping cart that allows users to add, remove, and view pet products.
+"""Pet Shopping Cart Program:
+
+This Python program simulates a simple pet shopping cart system. It consists of two classes:
+- PetProduct: Represents a pet product with attributes such as name, price, and quantity.
+- ShoppingCart: Represents a shopping cart that allows users to add, remove, and view pet products."""
 
 # Define a class to represent a pet product
 class PetProduct:
